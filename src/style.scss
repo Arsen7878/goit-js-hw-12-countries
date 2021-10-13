@@ -1,0 +1,89 @@
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.input__wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.input {
+  width: 400px;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  outline: none;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+#container {
+  margin: 5vh;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100vh;
+  overflow: auto;
+  position: relative;
+}
+
+.text__country--name {
+  font-size: 30px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.country__title {
+  text-align: center;
+}
+
+.wrapper__information {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.country__list {
+  margin-right: 20px;
+}
+
+.flag {
+  display: block;
+  width: 200px;
+  height: 200px;
+}
+
+.country__list-item {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.country__list-item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.span__inf {
+  font-weight: 400;
+}
+
+.languages__list {
+  list-style: square;
+  margin-left: 40px;
+}
+
+.list {
+  list-style: square;
+}
