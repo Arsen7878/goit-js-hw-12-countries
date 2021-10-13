@@ -6,6 +6,7 @@ import informationOfCountry from '../templates/information-of-country.hbs';
 const debounce = require('lodash.debounce');
 const inputRef = document.querySelector('#input');
 const wrapperRef = document.querySelector('#wrapper');
+
 inputRef.addEventListener('input', debounce(onInputSearch, 500));
 
 function onInputSearch(event) {
