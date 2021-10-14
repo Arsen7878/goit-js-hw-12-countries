@@ -13,14 +13,19 @@ function onInputSearch(event) {
   event.preventDefault();
   const searchQuery = inputRef.value;
   if (inputRef.value !== '') {
-    fetchCountries(searchQuery).then(resoult);
+    fetchCountries(searchQuery).then(resoult).catch(accessError);
   }
 }
+const accessError = () => {
+  const message = 'Error! Please try again later.';
+  notice(message);
+};
 
 const resoult = resolve => {
   wrapperRef.innerHTML = '';
   if (resolve.length > 10) {
-    notice();
+    const message = 'Too many matches found. Please enter a more specific query!';
+    notice(message);
     return;
   }
 
@@ -44,7 +49,7 @@ const stackBottomModal = new Stack({
   context: document.getElementById('container'),
 });
 
-function notice() {
+function notice(message) {
   error({
     title: 'Too many matches found. Please enter a more specific query!',
     stack: stackBottomModal,
