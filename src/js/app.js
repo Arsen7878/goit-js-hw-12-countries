@@ -17,8 +17,9 @@ function onInputSearch(event) {
   }
 }
 const accessError = () => {
-  const message = 'Error! Please try again later.';
-  notice(message);
+  //   const message = 'Error! Please try again later.';
+  //   notice(message);
+  console.log('Ошибка');
 };
 
 const resoult = resolve => {
